@@ -20,6 +20,10 @@ const Component = React.Component
 /**
  * 添加事务、键盘监听【敲击回车实现】、删除事务
  */
+
+/**
+ * 组件合并整体写一个功能
+ */
 class TodoList extends Component {
   constructor(props) {
     // 调用父类的构造函数，官方推荐
