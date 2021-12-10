@@ -3,6 +3,7 @@ import InputItem from './InputItem'
 import TodoItem from './TodoItem'
 import Greeting from './Greeting'
 import RefDemo from './RefDemo'
+import AxiosDemo from './AxiosDemo'
 
 /**
  * 组件拆分：
@@ -32,6 +33,7 @@ class TodoList extends Component {
   render() {
     return (
       <Fragment>
+        <AxiosDemo />
         <RefDemo />
         <Greeting
           number={this.state.number}

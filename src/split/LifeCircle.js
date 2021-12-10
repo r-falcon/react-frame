@@ -21,6 +21,10 @@ class LifeCircle extends React.Component {
   constructor(props) {
     super(props)
   }
+
+  render() {
+    return <div>LifeCircle</div>
+  }
 }
 
 export default LifeCircle
