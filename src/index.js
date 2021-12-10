@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom'
 import TodoList from './split/TodoList'
 import reportWebVitals from './reportWebVitals'
 
+// 严格模式，ref报错
 ReactDOM.render(
-  <React.StrictMode>
-    <TodoList />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <TodoList />
+  // </React.StrictMode>,
+  <TodoList />,
   document.getElementById('root')
 )
 
