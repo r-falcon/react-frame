@@ -3,7 +3,7 @@ const defaultState = {
   inputValue: '',
 }
 
-export default (state = defaultState, action) => {
+const reducer = (state = defaultState, action) => {
   if (action.type === 'change_input_value') {
     const newState = JSON.parse(JSON.stringify(state))
     newState.inputValue = action.value
@@ -25,3 +25,5 @@ export default (state = defaultState, action) => {
 
   return state
 }
+
+export default reducer
