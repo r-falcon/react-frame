@@ -44,7 +44,11 @@ class App extends React.Component {
             <List.Item>
               <span>{item}</span>
               <span
-                style={{ textAlign: 'right', color: 'red', cursor: 'pointer' }}
+                style={{
+                  textAlign: 'right',
+                  color: 'red',
+                  cursor: 'pointer',
+                }}
                 onClick={this.delTodoItem.bind(this, i)}
               >
                 删除

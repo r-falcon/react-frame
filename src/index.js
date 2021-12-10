@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 // import TodoList from './split/TodoList'
-import App from './component/App'
+// import App from './component/App'
+import RouteDemo from './route/RouteDemo'
 import reportWebVitals from './reportWebVitals'
 
 // 严格模式，ref报错
@@ -10,7 +11,7 @@ ReactDOM.render(
   //   <TodoList />
   // </React.StrictMode>,
   // <TodoList />,
-  <App />,
+  <RouteDemo />,
   document.getElementById('root')
 )
 
