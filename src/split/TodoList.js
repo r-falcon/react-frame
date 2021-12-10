@@ -32,7 +32,7 @@ class TodoList extends Component {
   render() {
     return (
       <Fragment>
-        <RefDemo></RefDemo>
+        <RefDemo />
         <Greeting
           number={this.state.number}
           increment={this.increment.bind(this)}
