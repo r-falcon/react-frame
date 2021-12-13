@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom'
 // import TodoList from './split/TodoList'
 // import App from './component/App'
 // import RouteDemo from './route/RouteDemo'
-import FactorRender from './factor/FactorRender'
+// import FactorRender from './factor/FactorRender'
+import ApiPanel from './apis/ApiPanel'
 import reportWebVitals from './reportWebVitals'
 
 // 严格模式，ref报错
@@ -13,7 +14,8 @@ ReactDOM.render(
   // </React.StrictMode>,
   // <TodoList />,
   // <RouteDemo />,
-  <FactorRender />,
+  // <FactorRender />,
+  <ApiPanel />,
   document.getElementById('root')
 )
 

@@ -41,10 +41,10 @@ class FactorRender extends React.Component {
     // }
 
     // 三目运算符
-    // return <div>{this.state.isLogin ? <Login /> : <NotLogin />}</div>
+    return <div>{this.state.isLogin ? <Login /> : <NotLogin />}</div>
 
     // 组织组件渲染
-    return <div>{this.state.isLogin ? <Login /> : null}</div>
+    // return <div>{this.state.isLogin ? <Login /> : null}</div>
   }
 }
 
