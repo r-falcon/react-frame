@@ -17,15 +17,34 @@ class FactorRender extends React.Component {
     super(props)
     this.state = {
       isLogin: true,
+      messageBox: ['hello world', 'love and peace'],
     }
   }
 
   render() {
-    if (this.state.isLogin) {
-      return <Login />
-    } else {
-      return <NotLogin />
-    }
+    // // 与（&&）运算符
+    // if (this.state.isLogin) {
+    //   return (
+    //     <div>
+    //       <Login />
+    //       {this.state.messageBox.length > 0 && (
+    //         <span>有消息：{this.state.messageBox.join(',')}</span>
+    //       )}
+    //     </div>
+    //   )
+    // } else {
+    //   return (
+    //     <div>
+    //       <NotLogin />
+    //     </div>
+    //   )
+    // }
+
+    // 三目运算符
+    // return <div>{this.state.isLogin ? <Login /> : <NotLogin />}</div>
+
+    // 组织组件渲染
+    return <div>{this.state.isLogin ? <Login /> : null}</div>
   }
 }
 
