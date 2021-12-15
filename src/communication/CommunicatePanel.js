@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import PSprops from './PSprops'
 import PSrefs from './PSrefs'
 import SPcallbacks from './SPcallbacks'
+import SPbubbling from './SPbubbling'
 
 /**
  * 父传子：
@@ -19,6 +20,7 @@ class CommunicatePanel extends React.Component {
         <PSprops />
         <PSrefs />
         <SPcallbacks />
+        <SPbubbling />
       </Fragment>
     )
   }
