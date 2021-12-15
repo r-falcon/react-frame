@@ -4,7 +4,11 @@ import ReactDOM from 'react-dom'
 // import App from './component/App'
 // import RouteDemo from './route/RouteDemo'
 // import FactorRender from './factor/FactorRender'
-import ApiPanel from './apis/ApiPanel'
+// import ApiPanel from './apis/ApiPanel'
+// import { Provider } from 'react-redux'
+// import store from './store'
+// import Container from './Container'
+import CommunicatePanel from './communication/CommunicatePanel'
 import reportWebVitals from './reportWebVitals'
 
 // 严格模式，ref报错
@@ -15,7 +19,11 @@ ReactDOM.render(
   // <TodoList />,
   // <RouteDemo />,
   // <FactorRender />,
-  <ApiPanel />,
+  // <ApiPanel />,
+  // <Provider store={store}>
+  //   <Container />
+  // </Provider>,
+  <CommunicatePanel />,
   document.getElementById('root')
 )
 
