@@ -4,7 +4,8 @@ class Son extends React.Component {
   render() {
     return (
       <div>
-        name is: {this.props.name},age is: {this.props.age}
+        name is: {this.props.name},age is: {this.props.age},func is:
+        {this.props.func()}
       </div>
     )
   }
@@ -20,7 +21,13 @@ class Parent extends React.Component {
   }
 
   render() {
-    return <Son name={this.state.name} age={this.state.age} />
+    return (
+      <Son name={this.state.name} age={this.state.age} func={this.parentFunc} />
+    )
+  }
+
+  parentFunc = () => {
+    return 'parent function'
   }
 }
 
