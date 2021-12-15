@@ -5,6 +5,7 @@ import SPcallbacks from './SPcallbacks'
 import SPbubbling from './SPbubbling'
 import Nmiddleware from './Nmiddleware'
 import Ncontext from './Ncontext'
+import Simple from './observer/Simple'
 
 /**
  * 父传子：
@@ -34,6 +35,7 @@ class CommunicatePanel extends React.Component {
         <SPbubbling />
         <Nmiddleware />
         <Ncontext />
+        <Simple />
       </Fragment>
     )
   }
