@@ -6,6 +6,7 @@ import SPbubbling from './SPbubbling'
 import Nmiddleware from './Nmiddleware'
 import Ncontext from './Ncontext'
 import Simple from './observer/Simple'
+import Package from './observer/Package'
 
 /**
  * 父传子：
@@ -36,6 +37,7 @@ class CommunicatePanel extends React.Component {
         <Nmiddleware />
         <Ncontext />
         <Simple />
+        <Package />
       </Fragment>
     )
   }
