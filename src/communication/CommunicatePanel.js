@@ -7,6 +7,7 @@ import Nmiddleware from './Nmiddleware'
 import Ncontext from './Ncontext'
 import Simple from './observer/Simple'
 import Package from './observer/Package'
+import Npubsub from './Npubsub'
 
 /**
  * 父传子：
@@ -38,6 +39,7 @@ class CommunicatePanel extends React.Component {
         <Ncontext />
         <Simple />
         <Package />
+        <Npubsub />
       </Fragment>
     )
   }
