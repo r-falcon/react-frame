@@ -1,5 +1,9 @@
 import React from 'react'
 
+/**
+ * 用途，子组件是一个modal弹框，父组件可以通过refs来控制子组件的显示和隐藏
+ */
+
 class PSref extends React.Component {
   render() {
     return <Parent />
@@ -17,9 +21,6 @@ class Parent extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.foo.state.name)
-    console.log(this.foo.state.age)
-    console.log(this.foo.sonFunc())
     this.setState({
       name: this.foo.state.name,
       age: this.foo.state.age,
@@ -53,9 +54,11 @@ class Son extends React.Component {
       age: 21,
     }
   }
+
   render() {
     return <div>son props</div>
   }
+
   sonFunc = () => {
     return 'son function'
   }
