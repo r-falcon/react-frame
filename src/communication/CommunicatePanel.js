@@ -8,6 +8,7 @@ import Ncontext from './Ncontext'
 import Simple from './observer/Simple'
 import Package from './observer/Package'
 import Npubsub from './Npubsub'
+import AxiosPanel from './AxiosPanel'
 
 /**
  * 父传子：
@@ -40,6 +41,7 @@ class CommunicatePanel extends React.Component {
         <Simple />
         <Package />
         <Npubsub />
+        <AxiosPanel />
       </Fragment>
     )
   }
