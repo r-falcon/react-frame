@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * render Props(渲染属性)
+ */
 class RenderProps extends React.Component {
   constructor(props) {
     super(props)

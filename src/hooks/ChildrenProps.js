@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * render children
+ */
 class ChildrenProps extends React.Component {
   constructor(props) {
     super(props)

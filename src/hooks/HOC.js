@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * HOC 高阶函数
+ */
 class Example extends React.Component {
   render() {
     return (
