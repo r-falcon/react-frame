@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react'
 import RenderProps from './RenderProps'
 import ChildrenProps from './ChildrenProps'
 import HOC from './HOC'
-import State from './modules/state'
+import State from './modules/State'
 import UseState from './modules/UseState'
 
 /**
