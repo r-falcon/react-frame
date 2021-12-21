@@ -8,7 +8,8 @@ import ReactDOM from 'react-dom'
 // import { Provider } from 'react-redux'
 // import store from './store'
 // import Container from './Container'
-import CommunicatePanel from './communication/CommunicatePanel'
+// import CommunicatePanel from './communication/CommunicatePanel'
+import HookPanel from './hooks/HookPanel'
 import reportWebVitals from './reportWebVitals'
 
 // 严格模式，ref报错
@@ -23,7 +24,8 @@ ReactDOM.render(
   // <Provider store={store}>
   //   <Container />
   // </Provider>,
-  <CommunicatePanel />,
+  // <CommunicatePanel />,
+  <HookPanel />,
   document.getElementById('root')
 )
 
