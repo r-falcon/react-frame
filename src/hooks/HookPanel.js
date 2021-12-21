@@ -4,8 +4,8 @@ import ChildrenProps from './ChildrenProps'
 import HOC from './HOC'
 import State from './modules/State'
 import UseState from './modules/UseState'
-import Effect from './modules/Effect'
-// import UseEffect from './modules/UseEffect'
+// import Effect from './modules/Effect'
+import UseEffect from './modules/UseEffect'
 
 /**
  * Hooks
@@ -74,8 +74,8 @@ class HookPanel extends React.Component {
         <HOC />
         <State />
         <UseState />
-        <Effect />
-        {/* <UseEffect /> */}
+        {/* <Effect /> */}
+        <UseEffect />
       </Fragment>
     )
   }
