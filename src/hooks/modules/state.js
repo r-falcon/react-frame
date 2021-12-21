@@ -20,7 +20,9 @@ class State extends React.Component {
           value={this.state.count}
           onChange={(e) => this.setState({ count: e.target.value })}
         />
-        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+        <button
+          onClick={() => this.setState({ count: Number(this.state.count) + 1 })}
+        >
           count++
         </button>
       </div>
