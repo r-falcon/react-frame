@@ -16,18 +16,18 @@ function UseEffect() {
   // })
 
   // 清除effect副作用
-  useEffect(() => {
-    const timer = setInterval(() => {
-      console.log('start a timer')
-      setCount((count) => count + 1)
-    }, 1000)
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     console.log('start a timer')
+  //     setCount((count) => count + 1)
+  //   }, 1000)
 
-    // 在组件卸载前和下一个effect执行前执行
-    return () => {
-      console.log('clear a timer')
-      clearInterval(timer)
-    }
-  }, [])
+  //   // 在组件卸载前和下一个effect执行前执行
+  //   return () => {
+  //     console.log('clear a timer')
+  //     clearInterval(timer)
+  //   }
+  // }, [])
 
   // 优化effect - 通过useEffect的第二个参数创建订阅
   useEffect(() => {
