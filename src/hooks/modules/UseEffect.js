@@ -29,6 +29,11 @@ function UseEffect() {
     }
   }, [])
 
+  // 优化effect - 通过useEffect的第二个参数创建订阅
+  useEffect(() => {
+    document.title = `Click ${count} times`
+  }, [count])
+
   return (
     <div>
       <p>useEffect count is:{count}</p>
