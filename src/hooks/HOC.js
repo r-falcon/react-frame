@@ -8,7 +8,7 @@ class Example extends React.Component {
     return (
       <div>
         <p>
-          current value is,x:{this.props.x},y:{this.props.y}
+          HOC. current value is,x:{this.props.x},y:{this.props.y}
         </p>
         <button onClick={this.props.handleClick}>HOC click it</button>
       </div>

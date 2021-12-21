@@ -33,7 +33,8 @@ class Props extends React.Component {
   render() {
     return (
       <div>
-        current value is,x:{this.props.params.x},y:{this.props.params.y}
+        children props. current value is,x:{this.props.params.x},y:
+        {this.props.params.y}
       </div>
     )
   }
