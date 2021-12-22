@@ -8,6 +8,7 @@ import UseState from './modules/UseState'
 import UseEffect from './modules/UseEffect'
 import Context from './modules/Context'
 import UseContext from './modules/UseContext'
+import UseReducer from './modules/UseReducer'
 
 /**
  * Hooks
@@ -85,6 +86,7 @@ class HookPanel extends React.Component {
         <UseEffect />
         <Context />
         <UseContext />
+        <UseReducer />
       </Fragment>
     )
   }
