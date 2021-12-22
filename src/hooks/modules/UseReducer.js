@@ -166,4 +166,12 @@ function A() {
   )
 }
 
+/**
+ * useState vs useReducer
+ * 1.state 为简单数据类型，建议使用useState
+ * 2.state 为复合数据类型，建议使用useReducer
+ * 3.state 变化非常多，state关联变化，业务逻辑复杂，使用useReducer,便于状态管理
+ * 4.state内部 useState,state全局 useReducer
+ */
+
 export default UseReducer
