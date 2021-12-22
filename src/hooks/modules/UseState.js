@@ -1,5 +1,12 @@
 import { useState } from 'react'
 
+/**
+ * 可以在函数式组件中使用state
+ * 在类组件中，state是一个对象；useState中，state可以是任何类型
+ * state的两个参数【第一个当前值，第二个state的setter方法，调用会触发render】
+ * 对象和数组，state不会自动更新补全，需要借助展开运算符
+ */
+
 function UseState() {
   const [count, setCount] = useState(0)
 
@@ -33,6 +40,8 @@ function UseState() {
       <div>
         <PreviousState count={count} />
       </div>
+      {/* 当useState中state为对象/数组时，useState不会自动合并更新对象，可以用函数式的 setState 结合展开运算符来达到合并更新对象的效果 */}
+      <ObjectState />
     </div>
   )
 }
@@ -100,6 +109,41 @@ function PreviousState(props) {
       <button onClick={() => setNum((num) => num + 1)}>num++</button>
       <button onClick={() => setNum((num) => num + 5)}>num+5</button>
       <button onClick={() => setNum(initialValue)}>reset</button>
+    </div>
+  )
+}
+
+function ObjectState() {
+  const [name, setName] = useState({
+    firstName: '',
+    lastName: '',
+  })
+
+  const [arr, setArr] = useState([])
+
+  return (
+    <div>
+      <p>
+        Your fullName is:{name.firstName} {name.lastName}
+      </p>
+      <input
+        type="text"
+        value={name.firstName}
+        // 注：下面这种写法是错误的，只对对象的一个属性进行了操作，另一个属性值会消失
+        // onChange={(e) => setName({ firstName: e.target.value })}
+        // 正确做法：借助展开运算符完成对象的合并和更新
+        onChange={(e) => setName({ ...name, firstName: e.target.value })}
+      />
+      <input
+        type="text"
+        value={name.lastName}
+        // onChange={(e) => setName({ lastName: e.target.value })}
+        onChange={(e) => setName({ ...name, lastName: e.target.value })}
+      />
+      <p>current Array is : {arr}</p>
+      <button onClick={() => setArr([...arr, arr.push(arr.length)])}>
+        push a value
+      </button>
     </div>
   )
 }
