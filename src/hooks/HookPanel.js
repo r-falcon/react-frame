@@ -6,6 +6,7 @@ import State from './modules/State'
 import UseState from './modules/UseState'
 // import Effect from './modules/Effect'
 import UseEffect from './modules/UseEffect'
+import Context from './modules/Context'
 import UseContext from './modules/UseContext'
 
 /**
@@ -82,6 +83,7 @@ class HookPanel extends React.Component {
         <UseState />
         {/* <Effect /> */}
         <UseEffect />
+        <Context />
         <UseContext />
       </Fragment>
     )
