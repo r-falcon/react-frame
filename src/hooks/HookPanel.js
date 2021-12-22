@@ -19,6 +19,11 @@ import UseEffect from './modules/UseEffect'
  */
 
 /**
+ * 1.只能在顶层作用域调用。不能在内部的循环、条件判断、嵌套的方法中使用
+ * 2.只能在React Function中使用hooks，不能在普通函数
+ */
+
+/**
  * State Hooks
  *  useState()
  *  [注]this.setState()是合并状态后返回一个新的状态；useState()是直接替换掉老状态返回新状态；useState()无论调用多少次，相互之间是独立的

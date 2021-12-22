@@ -29,6 +29,10 @@ function UseState() {
       <div>
         <NotUpdate count={count} />
       </div>
+      {/* previous state.当state值依赖上一个状态值时，需要通过function的方式传入value并返回变化后的 */}
+      <div>
+        <PreviousState count={count} />
+      </div>
     </div>
   )
 }
@@ -82,6 +86,20 @@ function NotUpdate(props) {
       >
         not update
       </button>
+    </div>
+  )
+}
+
+function PreviousState(props) {
+  const initialValue = props.count
+  const [num, setNum] = useState(initialValue)
+
+  return (
+    <div>
+      <p>previous num is:{num}</p>
+      <button onClick={() => setNum((num) => num + 1)}>num++</button>
+      <button onClick={() => setNum((num) => num + 5)}>num+5</button>
+      <button onClick={() => setNum(initialValue)}>reset</button>
     </div>
   )
 }
