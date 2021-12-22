@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useCallback, useState } from 'react'
 
 function UseCallback() {
   return (
@@ -11,14 +11,21 @@ function UseCallback() {
 }
 
 function Parent() {
-  const [age, setAage] = useState(18)
+  const [age, setAge] = useState(18)
   const [salary, setSalary] = useState(8000)
-  const incrementAge = () => {
-    setAage(age + 1)
-  }
-  const incrementSalary = () => {
+  // 将这两个函数改造成useCallback - 此时可以看到点击button只触发相应的count和event
+  // const incrementAge = () => {
+  //   setAge(age + 1)
+  // }
+  const incrementAge = useCallback(() => {
+    setAge(age + 1)
+  }, [age])
+  // const incrementSalary = () => {
+  //   setSalary(salary + 1000)
+  // }
+  const incrementSalary = useCallback(() => {
     setSalary(salary + 1000)
-  }
+  }, [salary])
 
   return (
     <div>
