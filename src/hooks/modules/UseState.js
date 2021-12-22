@@ -5,6 +5,7 @@ import { useState } from 'react'
  * 在类组件中，state是一个对象；useState中，state可以是任何类型
  * state的两个参数【第一个当前值，第二个state的setter方法，调用会触发render】
  * 对象和数组，state不会自动更新补全，需要借助展开运算符
+ * setState,会合并状态返回一个新的状态；useState,会用新状态替换原来的状态
  */
 
 function UseState() {
