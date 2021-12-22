@@ -10,6 +10,7 @@ import Context from './modules/Context'
 import UseContext from './modules/UseContext'
 import UseReducer from './modules/UseReducer'
 import UseCallback from './modules/UseCallbak'
+import UseMemo from './modules/UseMemo'
 
 /**
  * Hooks
@@ -99,6 +100,8 @@ class HookPanel extends React.Component {
         <UseReducer />
         <div>------------------------------------------------------</div>
         <UseCallback />
+        <div>------------------------------------------------------</div>
+        <UseMemo />
       </Fragment>
     )
   }
