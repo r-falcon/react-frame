@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
+/**
+ * componentDidMount、componentDidUpdate、componentWillUnmount 相当于useEffect生命周期钩子的合并
+ * 原来class组件中存在的问题：代码复用、代码分散
+ * useEffect:
+ *  1.第一个参数为匿名函数，会在每次render后执行里面的函数
+ *  2.可以直接拿到props和state，不用通过this
+ */
+
 function UseEffect() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +31,7 @@ function UseEffect() {
   //   }, 1000)
 
   //   // 在组件卸载前和下一个effect执行前执行
+  //   -此时如果回调函数的第二个参数为空数组，只在挂载时执行一次，但是在setInterval回调中，count的值不会发生变化，所以将第二个参数置为count
   //   return () => {
   //     console.log('clear a timer')
   //     clearInterval(timer)
