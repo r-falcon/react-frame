@@ -41,7 +41,9 @@ function UseState() {
         <PreviousState count={count} />
       </div>
       {/* 当useState中state为对象/数组时，useState不会自动合并更新对象，可以用函数式的 setState 结合展开运算符来达到合并更新对象的效果 */}
-      <ObjectState />
+      <div>
+        <ObjectState />
+      </div>
     </div>
   )
 }
