@@ -5,13 +5,14 @@ import HOC from './HOC'
 import State from './modules/State'
 import UseState from './modules/UseState'
 // import Effect from './modules/Effect'
-import UseEffect from './modules/UseEffect'
+// import UseEffect from './modules/UseEffect'
 import Context from './modules/Context'
 import UseContext from './modules/UseContext'
 import UseReducer from './modules/UseReducer'
 import UseCallback from './modules/UseCallbak'
 import UseMemo from './modules/UseMemo'
 import UseRef from './modules/UseRef'
+import CustomHooks from './modules/CustomHooks'
 
 /**
  * Hooks
@@ -92,7 +93,7 @@ class HookPanel extends React.Component {
         <div>------------------------------------------------------</div>
         {/* <Effect /> */}
         <div>------------------------------------------------------</div>
-        <UseEffect />
+        {/* <UseEffect /> */}
         <div>------------------------------------------------------</div>
         <Context />
         <div>------------------------------------------------------</div>
@@ -105,6 +106,8 @@ class HookPanel extends React.Component {
         <UseMemo />
         <div>------------------------------------------------------</div>
         <UseRef />
+        <div>------------------------------------------------------</div>
+        <CustomHooks />
       </Fragment>
     )
   }
