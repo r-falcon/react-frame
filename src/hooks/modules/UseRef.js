@@ -5,6 +5,9 @@ import React, { Fragment, useEffect, useRef, useState } from 'react'
  * 1.管理焦点、文本选择、媒体播放
  * 2.触发强制动画
  * 3.集成第三方dom库
+ * 注意：
+ * 1.勿过度使用ref
+ * 2.让更高的组件拥有state
  */
 
 function UseRef() {
