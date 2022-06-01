@@ -51,4 +51,14 @@ function Component() {
   return <Hoc />;
 }
 
+/**
+ * 注意组件的三大属性：state、props、refs
+ */
+
+/**
+ * 受控组件 vs 非受控组件
+ * 受控组件：通过 setState 将输入的值维护到 state 中，需要时再从 state 中取出，这里的数据就受到了 state 的控制【推荐使用】
+ * 非受控组件：所有输入类型的 DOM 都是现取现用
+ */
+
 export default Component;
