@@ -15,6 +15,7 @@ class Home extends React.Component {
         <Link to="/component">Component</Link>
         <Link to="/lifecircle">LifeCircle</Link>
         <Link to="/redux">Redux</Link>
+        <Link to="/setState">setState</Link>
       </div>
     );
   }

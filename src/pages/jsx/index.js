@@ -29,13 +29,13 @@ class JsxPanel extends React.Component {
       // 5.所有标签必须闭合
       // 6.小写字母开头标签匹配检测html元素
       // 7.大写字母开头标签匹配检测是否有相应的组件
-      // 2.样式的类名使用className指定,直接引入css样式，模块化引入css
       <div className={styles.whole}>
         <p>写个循环</p>
         <ul>
           {/* 1.标签中混入js要使用花括号 */}
           {this.state.hobbies.map(item => {
             return (
+              // 2.样式的类名使用className指定,直接引入css样式，模块化引入css
               <li key={item.value} className="item">
                 {item.label}
               </li>
