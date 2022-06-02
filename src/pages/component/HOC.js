@@ -13,6 +13,9 @@ class Example extends React.Component {
   }
 }
 
+/**
+ * 高阶函数：接受的参数是一个函数；返回值是一个函数
+ */
 const HOC = Component => {
   return class extends React.Component {
     constructor(props) {
