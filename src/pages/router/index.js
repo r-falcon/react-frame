@@ -29,6 +29,8 @@ import History from './History';
  * path="*" 可以匹配任何非空路由，同时该匹配拥有最低优先级，可以设置404页面
  */
 
+// [blank] react-router4.x、react-router5.x vs react-router6.x vs vue3-router
+
 class RoutePanel extends React.Component {
   render() {
     return (

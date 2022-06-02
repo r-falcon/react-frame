@@ -4,6 +4,7 @@ import Home from './Home';
 import JsxPanel from './jsx';
 import Component from './component';
 import LifeCircle from './lifecircle';
+import ReduxPanel from './redux';
 
 class RouteDemo extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class RouteDemo extends React.Component {
               element={<Component params="hello world"></Component>}
             />
             <Route path="/lifecircle" element={<LifeCircle></LifeCircle>} />
+            <Route path="/redux" element={<ReduxPanel></ReduxPanel>} />
           </Routes>
         </Router>
       </div>
