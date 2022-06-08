@@ -1,6 +1,12 @@
 import React, { Fragment } from 'react';
 import StatePanel from './useState';
 import EffectPanel from './userEffect';
+import RefPanel from './useRef';
+import MemoPanel from './useMemo';
+import CallbackPanel from './useCallback';
+import ContextPanel from './useContext';
+import ReducerPanel from './useReducer';
+import CustomizePanel from './useCustomize';
 
 /**
  * 使用class的缺陷
@@ -16,8 +22,14 @@ class HookPanel extends React.Component {
   render() {
     return (
       <Fragment>
-        <StatePanel />
-        <EffectPanel />
+        {/* <StatePanel /> */}
+        {/* <EffectPanel /> */}
+        {/* <RefPanel /> */}
+        {/* <MemoPanel /> */}
+        {/* <CallbackPanel /> */}
+        {/* <ContextPanel /> */}
+        {/* <ReducerPanel /> */}
+        <CustomizePanel />
       </Fragment>
     );
   }
